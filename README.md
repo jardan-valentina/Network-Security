@@ -214,3 +214,12 @@ Answer the following review questions.
     <li>What technology could provide law enforcement with the ability to track and recover a stolen laptop?</li>
     <li>How could you prevent an attacker from booting a stolen laptop using an external hard drive?</li>
 </ul>
+
+<h3>Firewall Architectures and Methodologies</h3>
+<ul>
+    <li>Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.</li>
+    <li>Which type of firewall considers the connection as a whole? Meaning, instead of considering only individual packets, these firewalls consider whole streams of packets at one time.</li>
+    <li>Which type of firewall intercepts all traffic prior to forwarding it to its final destination? In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it.</li>
+    <li>Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type—all without opening the packet to inspect its contents?</li>
+   <li> Which type of firewall filters solely based on source and destination MAC address?</li>
+</ul>
