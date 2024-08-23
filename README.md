@@ -145,18 +145,17 @@ Remember to reload the firewalld service in order to apply your new settings bef
         <li>Use the configurations provided at the beginning of the instructions.</li>
     </ul>
 </ul>
-
-<h3>Add services to the active zones.<h3>
+<h3>Add services to the active zones.</h3>
 <ul>
-    <li>Run the commands that add services to the <b>public</b> zone, the <b>web</b> zone, the <b>sales</b> zone, and the <b>mail</b> zone.</li>
+    <li>Run the commands that add services to the public zone, the web zone, the sales zone, and the mail zone.</li>
     <ul>    
     <li>Use the configurations provided at the beginning of the instructions.</li>
     </ul>
 </ul>
 
-<h3>Add your adversaries to the drop zone.<h3>
-    Run the command that will add all current and any future blacklisted IPs to the <b>pdrop</b> zone.
-
+<h3>Add your adversaries to the drop zone.</h3>
+Run the command that will add all current and any future blacklisted IPs to the drop zone.
+    
 <h3> Make rules permanent, then reload them.</h3>
 It's good practice to ensure that your firewalld installation remains nailed up and retains its services across reboots. This helps ensure that the network remains secure after unplanned outages such as power failures.
     <ul>
