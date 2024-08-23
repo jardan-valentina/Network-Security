@@ -48,3 +48,10 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 <b>Snort Rule #3</b>
 Your turn! Write a Snort rule that alerts when traffic is detected inbound on port <b>4444</b> to the local network on any port. Be sure to include the <b>msg</b> in the rule option.
+<h2>Part 2: "Drop Zone" Lab</h2>
+In this lab exercise, you will assume the role of a junior security administrator at an indoor skydiving company called Drop Zone.
+<ul>
+    <li>Your company hosts a web server that accepts online reservations and credit card payments. As a result, your company must comply with PCI/DSS regulations that require businesses who accept online credit card payments to have a firewall in place to protect personally identifiable information (PII).</li>
+    <li>Your network has been under attack from the following three IPs: <b>10.208.56.23</b>, <b>135.95.103.76</b>, and <b>76.34.169.118</b>. You have decided to add these IPs to the <b>drop</b> zone within your firewall.</li>
+    <li>The first requirement of PCI/DSS regulations is to protect your system with firewalls. "Properly configured firewalls protect your card data environment. Firewalls restrict incoming and outgoing network traffic through rules and criteria configured by your organization." —  <a href="https://listings.pcisecuritystandards.org/documents/library.php?category=pcidss&subcategory=pcidss_supporting%23results" target="_blank"> PCI DSS Quick Reference Guide </a> </li>
+</ul>
