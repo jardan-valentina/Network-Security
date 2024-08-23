@@ -106,7 +106,7 @@ Before getting started, you should verify that you do not have any instances of 
     <li>Run the command that removes any running instance of UFW.</li>
 </ul>
 
-<h3>Enable and start firewalld.</h3>h3>
+<h3>Enable and start firewalld.</h3>
 By default, the <b>firewalld</b> service should be running. If not, then run the commands that enable and start firewalld upon boots and reboots.
 <b>Note:</b> This will ensure that firewalld remains active after each reboot.
 
@@ -185,3 +185,32 @@ Now that you've set up your brand new firewalld installation, it's time to verif
     <li>Are all of the rules in place? If not, then go back and make the necessary modifications before checking again.</li>
 </ul>
 Congratulations! You have successfully configured and deployed a fully comprehensive firewalld installation.
+
+<h2>Part 3: IDS, IPS, DiD, and Firewalls</h2>
+Answer the following review questions.
+
+<h3>IDS vs. IPS Systems</h3>
+<ul>
+   <li>Name and define two ways an IDS connects to a network.</li>
+   <li>Describe how an IPS connects to a network.</li>
+   <li> What type of IDS compares patterns of traffic to predefined signatures and is unable to detect zero-day attacks?</li>
+    <li>What type of IDS is beneficial for detecting all suspicious traffic that deviates from the well-known baseline and is excellent at detecting when an attacker probes or sweeps a network?</li>
+</ul>
+
+<h3>Defense-in-Depth</h3>
+<ul>
+    For each of the following scenarios, provide the layer of defense-in-depth that applies:
+<ul>
+       <li> A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.</li>
+       <li> A zero-day goes undetected by antivirus software.</li>
+       <li> A criminal successfully gains access to HR’s database.</li>
+       <li> A criminal hacker exploits a vulnerability within an operating system.</li>
+       <li>A hacktivist organization successfully performs a DDoS attack, taking down a government website.</li>
+       <li> Data is classified at the wrong classification level.</li>
+       <li>A state-sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.</li>
+</ul>
+   <li> Name one method of protecting data-at-rest from being readable on hard drive.</li>
+    <li>Name one method of protecting data-in-transit.</li>
+    <li>What technology could provide law enforcement with the ability to track and recover a stolen laptop?</li>
+    <li>How could you prevent an attacker from booting a stolen laptop using an external hard drive?</li>
+</ul>
