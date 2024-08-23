@@ -110,7 +110,7 @@ Before getting started, you should verify that you do not have any instances of 
 By default, the <b>firewalld</b> service should be running. If not, then run the commands that enable and start firewalld upon boots and reboots.
 <b>Note:</b> This will ensure that firewalld remains active after each reboot.
 
-<h2>Confirm that the service is running.</h2>
+<h3>Confirm that the service is running.</h3>
 Run the command that checks whether the firewalld service is up and running.
 
 <h3>List all firewall rules currently configured.</h3>
@@ -119,3 +119,69 @@ Next, lists all currently configured firewall rules. This will give you a good i
     <li>Run the command that lists all currently configured firewall rules.</li>
     <li>Take note of what zones and settings are configured. You many need to remove unneeded services and settings.</li>
 </ul>
+
+<h3>List all supported service types that can be enabled.</h3>
+<ul>
+    <li>Run the command that lists all currently supported services to find out whether the service you need is available.</li>
+    <li>Notice that the <b>home</b> and <b>drop</b> zones are created by default.</li>
+</ul>
+
+<h3>Zone views</h3>
+<ul>
+    <li>Run the command that lists all currently configured zones./li>
+    <li>Notice that the  <b>public</b> and  <b>drop</b> zones are created by default. Therefore, you will need to create zones for  <b>web</b>,  <b>sales</b>, and  <b>mail</b>./li>
+</ul>
+
+<h3>Create zones for <b>web</b>, <b>sales</b> and <b>mail</b>.</h3>
+<ul>
+    <li>Run the commands that create <b>web</b>, <b>sales</b>, and <b>mail</b> zones.</li>
+</ul>
+Remember to reload the firewalld service in order to apply your new settings before moving on. 
+
+<h3>Set the zones to their designated interfaces.</h3>
+<ul>
+    <li>Run the commands that set your <b>eth</b> interfaces to your zones.</li>
+    <ul>
+        <li>Use the configurations provided at the beginning of the instructions.</li>
+    </ul>
+</ul>
+
+<h3>Add services to the active zones.<h3>
+<ul>
+    <li>Run the commands that add services to the <b>public</b> zone, the <b>web</b> zone, the <b>sales</b> zone, and the <b>mail</b> zone.</li>
+    <ul>    
+    <li>Use the configurations provided at the beginning of the instructions.</li>
+    </ul>
+</ul>
+
+<h3>Add your adversaries to the drop zone.<h3>
+    Run the command that will add all current and any future blacklisted IPs to the <b>pdrop</b> zone.
+
+<h3> Make rules permanent, then reload them.</h3>
+It's good practice to ensure that your firewalld installation remains nailed up and retains its services across reboots. This helps ensure that the network remains secure after unplanned outages such as power failures.
+    <ul>
+    <li>Run the command that reloads the firewalld configurations and writes it to memory.</li>
+    </ul>
+
+<h3>View active zones.</h3>
+Now, provide truncated listings of all currently active zones. This is a good time to verify your zone settings.
+<ul>
+    <li>Run the command that displays all zone services.</li>
+</ul>
+
+<h3>Block an IP address.</h3>
+    Use a rich-rule that blocks the IP address 138.138.0.3 on your public zone.
+
+<h3>Block Ping/ICMP Requests</h3>
+Harden your network against ping scans by blocking icmp ehco replies.
+<ul>
+    <li> Run the command that blocks pings and icmp requests in your public zone.</li>
+</ul>
+
+<h3>Rule Check</h3>
+Now that you've set up your brand new firewalld installation, it's time to verify that all of the settings have taken effect.
+<ul>
+    <li>Run the command that lists all of the rule settings. Run one command at a time for each zone.</li>
+    <li>Are all of the rules in place? If not, then go back and make the necessary modifications before checking again.</li>
+</ul>
+Congratulations! You have successfully configured and deployed a fully comprehensive firewalld installation.
